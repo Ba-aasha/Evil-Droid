@@ -38,7 +38,7 @@ clear
 function checkinternet() 
 {
   ping -c 1 google.com > /dev/null 2>&1
-  if [[ "$?" != 0 ]]
+  if [[ "$?" != 1 ]]
   then
     echo -e $yellow " Checking For Internet: ${RedF}FAILED"
     echo
