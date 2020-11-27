@@ -40,7 +40,6 @@ function checkinternet()
   ping -c 1 chrome.com > /dev/null 2>&1
   if [[ "$?" != 1 ]]
     echo -e $yellow " Checking For Internet: ${LighGreenF}CONNECTED"
-  fi
 }
 checkinternet
 sleep 2
