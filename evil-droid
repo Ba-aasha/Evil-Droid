@@ -37,7 +37,7 @@ clear
 # check internet 
 function checkinternet() 
 {
-  ping -c 1 google.com > /dev/null 2>&1
+  ping -c 1 chrome.com > /dev/null 2>&1
   if [[ "$?" != 1 ]]
   then
     echo -e $yellow " Checking For Internet: ${RedF}FAILED"
